@@ -1,1 +1,23 @@
-<p>newtaskform works!</p>
+<h3>New task</h3>
+<hr>
+
+<div id="newTask">
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="task" placeholder="">
+  <label for="floatingInput">Task name</label>
+</div>
+
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="desc" placeholder="">
+  <label for="floatingInput">Description</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="priority" placeholder="">
+  <label for="floatingInput">Priority</label>
+</div>
+<div class="form-floating mb-3">
+  <input type="text" class="form-control" id="status" placeholder="">
+  <label for="floatingInput">Status</label>
+  <button class="btn btn-success mt-3"(click)="addTask()">Felvétel</button>
+</div>
+</div>

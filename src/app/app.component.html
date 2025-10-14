@@ -1,5 +1,5 @@
 <div class="container">
-  
+  <app-newtaskform></app-newtaskform>
   <app-tasklist [tasks]="tasks" (emitTasks)="getSelectedTasks($event)"></app-tasklist>
   <app-completed-tasklist [tasks]="selectedTasks"></app-completed-tasklist>
 </div>

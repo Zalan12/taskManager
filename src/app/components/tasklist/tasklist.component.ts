@@ -23,8 +23,9 @@ export class TasklistComponent {
     if(idx==-1)
       {
         let currentTask=this.tasks.findIndex(item=>item.id==id)
+
         this.selectedTasks.push(this.tasks[currentTask]);
-        
+        this.tasks.splice(currentTask,1);
       }
       else
       {

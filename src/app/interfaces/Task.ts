@@ -1,7 +1,7 @@
 export interface Task{
     id:number,
-    task:string,
-    desc:string,
-    priority:string,
+    task:string|any,
+    desc:string|any,
+    priority:string|any,
     status:number
 }
