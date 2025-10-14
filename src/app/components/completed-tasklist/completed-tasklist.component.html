@@ -16,7 +16,7 @@
         <td>{{task.desc}}</td>
         <td>{{task.priority}}</td>
         <td>{{task.status}}</td>
-        <td><button type="button" class="btn btn-success">Kész</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="visszaData(task.id)">Vissza</button></td>
     </tr>
 </tbody>
 <tfoot>

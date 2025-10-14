@@ -1,5 +1,5 @@
 import { CommonModule, NgFor } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Task } from '../../interfaces/Task';
 
 @Component({
@@ -11,7 +11,8 @@ import { Task } from '../../interfaces/Task';
 })
 export class NewtaskformComponent {
 
-  @Input() tasks:Task[]=[]
+  @Input() tasks:Task[]=[];
+     @Output() emitTasks: EventEmitter<Task[]> = new EventEmitter();
   addTask()
   {
     console.log("su");
@@ -29,5 +30,7 @@ export class NewtaskformComponent {
     }
     this.tasks.push(newTask);
     console.log(this.tasks)
+
+    this.emitTasks.emit(this.tasks);
   }
 }
